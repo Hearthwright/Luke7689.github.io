@@ -1,0 +1,100 @@
+#outside {
+  height: 350px;
+  width: 350px;
+  border-color: black;
+  border-style: solid;
+  border-width: 25px;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: shake 1s infinite alternate;
+  position: absolute;
+  Margin-top: 150px;
+  Margin-left: 150px;
+}
+
+#top {
+  Background: red;
+  width: 350px;
+  height: 0px;
+  border-top: 157px solid red;
+  border-radius: 50% 50% 0% 0%;
+}
+
+#center {
+  background: black;
+  width: 350px;
+  height: 30px;
+  border-top: 10px solid black;
+  position: relative;
+  up: 100px;
+}
+
+#button {
+  border: 5x solid black;
+  background: white;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  position: relative;
+  left: 130px;
+  bottom: 35px;
+  border: 10px solid black;
+}
+
+#buttonsmall {
+  height: 37.5px;
+  width: 37.5px;
+  background: black;
+  border-radius: 50%;
+  position: relative;
+  Margin-top: 19px;
+  left: 18px;
+  box-shadow: 3px 3px 3px 2px;
+  color: grey;
+  animation: flash 1s infinite alternate;
+}
+
+#shade {
+  width: 30%;
+  height: 30%;
+  background: radial-gradient
+}
+img{
+  position: absolute;
+  height: 100px;
+  z-index: -1;
+  animation: stara 1s
+  }
+#two{
+  right: 30px;
+    margin-right: -40px;
+  animation: starb 1s;
+}
+#three{
+  right: 5px;
+  margin-right: 120px;
+    animation: starc 1s;
+}
+
+
+@keyframes shake {
+  0% {
+    transform: rotate(45deg);
+    margin-left: 180px;
+  }
+  50% {
+    margin-right: 180px;
+  }
+  100% {
+    transform: rotate(-45deg)
+  }
+}
+
+@keyframes flash {
+  50% {
+    background: #C70B04;
+    color: #FF0E05;
+  }
+}
+}
